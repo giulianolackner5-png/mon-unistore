@@ -4,20 +4,20 @@
     "author": "giulianolackner5-png",
     "description": "Mon dépôt personnalisé",
     "file": "monmagasin.unistore",
-    "url": "https://githubusercontent.com",
+    "url": "https://raw.githubusercontent.com/giulianolackner5-png/mon-unistore/refs/heads/main/monmagasin.unistore",
     "version": 3,
     "revision": 1
   },
   "3HS": [
     {
       "type": "downloadFile",
-      "file": "https://erista.me",
+      "file": "https://download2.erista.me/3hs/3hs.cia",
       "output": "sdmc:/3hs_temp.cia",
       "message": "Téléchargement de 3HS..."
     },
     {
       "type": "installCia",
-      "file": "/3hs_temp.cia",
+      "file": "sdmc:/3hs_temp.cia",
       "message": "le nintendo hshop réinventé et gratuit"
     },
     {
