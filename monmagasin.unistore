@@ -1,0 +1,29 @@
+{
+  "storeInfo": {
+    "title": "Mon Magasin hShop",
+    "author": "Nirrox",
+    "description": "Mon dépôt personnalisé",
+    "file": "monmagasin.unistore",
+    "url": "https://githubusercontent.com",
+    "version": 3,
+    "revision": 1
+  },
+  "3HS": [
+    {
+      "type": "downloadFile",
+      "file": "https://erista.me",
+      "output": "sdmc:/3hs_temp.cia",
+      "message": "Téléchargement de 3HS..."
+    },
+    {
+      "type": "installCia",
+      "file": "/3hs_temp.cia",
+      "message": "le nintendo hshop réinventé et gratuit"
+    },
+    {
+      "type": "deleteFile",
+      "file": "sdmc:/3hs_temp.cia",
+      "message": "Nettoyage du fichier temporaire..."
+    }
+  ]
+}
