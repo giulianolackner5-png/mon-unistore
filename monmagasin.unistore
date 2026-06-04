@@ -4,26 +4,34 @@
     "author": "giulianolackner5-png",
     "description": "Mon dépôt personnalisé",
     "file": "monmagasin.unistore",
-    "url": "https://raw.githubusercontent.com/giulianolackner5-png/mon-unistore/refs/heads/main/monmagasin.unistore",
+    "url": "https://githubusercontent.com",
     "version": 3,
     "revision": 1
   },
   "3HS": [
     {
-      "type": "downloadFile",
-      "file": "https://download2.erista.me/3hs/3hs.cia",
-      "output": "sdmc:/3hs_temp.cia",
-      "message": "Téléchargement de 3HS..."
-    },
-    {
-      "type": "installCia",
-      "file": "sdmc:/3hs_temp.cia",
-      "message": "le nintendo hshop réinventé et gratuit"
-    },
-    {
-      "type": "deleteFile",
-      "file": "sdmc:/3hs_temp.cia",
-      "message": "Nettoyage du fichier temporaire..."
+      "info": {
+        "title": "3HS",
+        "version": "1.0.0",
+        "category": ["Outils"],
+        "console": ["3DS"],
+        "description": "le nintendo hshop réinventé et gratuit"
+      },
+      "script": [
+        {
+          "type": "downloadFile",
+          "file": "https://erista.me",
+          "output": "sdmc:/3hs_temp.cia"
+        },
+        {
+          "type": "installCia",
+          "file": "sdmc:/3hs_temp.cia"
+        },
+        {
+          "type": "deleteFile",
+          "file": "sdmc:/3hs_temp.cia"
+        }
+      ]
     }
   ]
 }
