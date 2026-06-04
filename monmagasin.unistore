@@ -1,37 +1,42 @@
 {
-  "storeInfo": {
-    "title": "Mon Magasin hShop",
-    "author": "giulianolackner5-png",
-    "description": "Mon dépôt personnalisé",
-    "file": "monmagasin.unistore",
-    "url": "https://githubusercontent.com",
-    "version": 3,
-    "revision": 1
-  },
-  "3HS": [
-    {
-      "info": {
-        "title": "3HS",
-        "version": "1.0.0",
-        "category": ["Outils"],
-        "console": ["3DS"],
-        "description": "le nintendo hshop réinventé et gratuit"
-      },
-      "script": [
+    "storeContent": [
         {
-          "type": "downloadFile",
-          "file": "https://erista.me",
-          "output": "sdmc:/3hs_temp.cia"
-        },
-        {
-          "type": "installCia",
-          "file": "sdmc:/3hs_temp.cia"
-        },
-        {
-          "type": "deleteFile",
-          "file": "sdmc:/3hs_temp.cia"
+            "info": {
+                "title": "3HS",
+                "author": "hShop Team",
+                "description": "le nintendo hshop réinventé et gratuit",
+                "category": ["utility"],
+                "console": ["3DS"],
+                "version": "v1.0.0"
+            },
+            "Download 3HS.cia": [
+                {
+                    "file": "https://erista.me",
+                    "message": "Downloading 3HS.cia...",
+                    "output": "sdmc:/3hs_temp.cia",
+                    "type": "downloadFile"
+                },
+                {
+                    "file": "/3hs_temp.cia",
+                    "message": "Installing 3HS.cia...",
+                    "type": "installCia"
+                },
+                {
+                    "file": "sdmc:/3hs_temp.cia",
+                    "message": "Deleting 3HS.cia.",
+                    "type": "deleteFile"
+                }
+            ]
         }
-      ]
+    ],
+    "storeInfo": {
+        "title": "Mon Magasin hShop",
+        "author": "giulianolackner5-png",
+        "description": "Mon dépôt personnalisé",
+        "url": "https://githubusercontent.com",
+        "file": "monmagasin.unistore",
+        "revision": 1,
+        "version": 3
     }
-  ]
+}
 }
