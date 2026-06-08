@@ -2,30 +2,34 @@
     "storeContent": [
         {
             "info": {
-                "title": "3HS",
-                "author": "hShop Team",
-                "description": "le nintendo hshop réinventé et gratuit",
-                "category": ["utility"],
-                "console": ["3DS"],
-                "version": "v1.0.0",
-                "icon": "3hs_icon" 
+                "title": "Shovel Knight: Treasure Trove",
+                "author": "i dont care ",
+                "description": "un jeu que je connais pas",
+                "category": [
+                    "utility"
+                ],
+                "console": [
+                    "3DS"
+                ],
+                "version": "1.0.0",
+                "icon": "default_icon"
             },
-            "Download 3HS.cia": [
+            "Installer Shovel Knight: Treasure Trove": [
                 {
-                    "file": "https://erista.me",
-                    "message": "Downloading 3HS.cia...",
-                    "output": "sdmc:/3hs_temp.cia",
-                    "type": "downloadFile"
+                    "type": "downloadFile",
+                    "file": "https://cdn.ghosteshop.com/Nintendo%203DS/EUR/S/Shovel%20Knight%20-%20Treasure%20Trove%20%28EUR%29.cia",
+                    "message": "Téléchargement de Shovel Knight: Treasure Trove...",
+                    "output": "sdmc:/Shovel Knight: Treasure Trove_temp.cia"
                 },
                 {
-                    "file": "/3hs_temp.cia",
-                    "message": "Installing 3HS.cia...",
-                    "type": "installCia"
+                    "type": "installCia",
+                    "file": "sdmc:/Shovel Knight: Treasure Trove_temp.cia",
+                    "message": "Installation de Shovel Knight: Treasure Trove..."
                 },
                 {
-                    "file": "sdmc:/3hs_temp.cia",
-                    "message": "Deleting 3HS.cia.",
-                    "type": "deleteFile"
+                    "type": "deleteFile",
+                    "file": "sdmc:/Shovel Knight: Treasure Trove_temp.cia",
+                    "message": "Nettoyage..."
                 }
             ]
         }
@@ -34,10 +38,10 @@
         "title": "Mon Magasin hShop",
         "author": "giulianolackner5-png",
         "description": "Mon dépôt personnalisé",
-        "url": "https://githubusercontent.com",
+        "url": "https://raw.githubusercontent.com/giulianolackner5-png/mon-unistore/main/monmagasin.unistore",
         "file": "monmagasin.unistore",
         "revision": 1,
         "version": 3,
-        "bar": "https://raw.githubusercontent.com/ton_pseudo/ton_depot/main/assets/{0}.png"
+        "bar": "https://raw.githubusercontent.com/giulianolackner5-png/mon-unistore/main/assets/{0}.png"
     }
 }
